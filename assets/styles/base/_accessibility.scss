@@ -1,0 +1,4 @@
+.assistive-text,
+.sr-only {
+	@include assistive-text();
+}

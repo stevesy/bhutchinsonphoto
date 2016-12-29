@@ -1,23 +1,33 @@
 <?php
 	$pageTitle = 'Portraits';
-	$bodyClass = 'portraits';
-	$metaDesc = 'Ben Hutchinson is a Portland, Oregon photographer who specializes in creative portraiture, fashion, and concept photography.';
+	$metaDescription = 'Ben Hutchinson is a Portland, Oregon photographer who specializes in creative portraiture, fashion, and concept photography.';
+	$bodyClass = 'page-gallery page-portraits';
 	
 	include 'includes/header.php';
 ?>
 
-<div class="gallery">
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>IMG_2390.jpg" alt="IMG_2390.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>IMG_1103.jpg" alt="IMG_1103.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>IMG_0852.jpg" alt="IMG_0852.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>IMG_2725.jpg" alt="IMG_2725.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>pen-1.jpg" alt="pen-1.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>noah.jpg" alt="noah.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>IMG_9132.jpg" alt="IMG_9132.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>IMG_9202.jpg" alt="IMG_9202.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>jessica.jpg" alt="jessica.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>monica-1.jpg" alt="monica-1.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>monica-2.jpg" alt="monica-2.jpg" />
+<div class="section section-gallery">
+	<div class="section-content row">
+		<div class="col">
+			<ul class="gallery">
+				<li><img src="/public/img/IMG_2390.jpg" alt="" /></li>
+				<li><img src="/public/img/IMG_1103.jpg" alt="" /></li>
+				<li><img src="/public/img/IMG_0852.jpg" alt="" /></li>
+				<li><img src="/public/img/IMG_2725.jpg" alt="" /></li>
+				<li><img src="/public/img/pen-1.jpg" alt="" /></li>
+				<li><img src="/public/img/noah.jpg" alt="" /></li>
+				<li><img src="/public/img/IMG_9132.jpg" alt="" /></li>
+				<li><img src="/public/img/IMG_9202.jpg" alt="" /></li>
+				<li><img src="/public/img/jessica.jpg" alt="" /></li>
+				<li><img src="/public/img/monica-1.jpg" alt="" /></li>
+				<li><img src="/public/img/monica-2.jpg" alt="" /></li>
+			</ul>
+			<div class="gallery-nav">
+				<button class="gallery-prev"><span>&lt;</span></button>
+				<button class="gallery-next"><span>&gt;</span></button>
+			</div>
+		</div>
+	</div>
 </div>
 
-<?php include 'includes/footer.php' ?>
+<?php include 'includes/footer.php'; ?>

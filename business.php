@@ -1,20 +1,28 @@
 <?php
 	$pageTitle = 'Business';
-	$bodyClass = 'business';
-	$metaDesc = '';
+	$bodyClass = 'page-gallery page-business';
 	
 	include 'includes/header.php';
 ?>
 
-<div class="gallery">
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>leigh.jpg" alt="Leigh" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>marshall.jpg" alt="Marshall" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>lea.jpg" alt="Lea" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>chelsea.jpg" alt="Chelsea" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>david.jpg" alt="David" />
-	
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>dave-miller.jpg" alt="Dave Miller" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>jodie.jpg" alt="Jodie" />
+<div class="section section-gallery">
+	<div class="section-content row">
+		<div class="col">
+			<ul class="gallery">
+				<li><img src="/public/img/leigh.jpg" alt="" /></li>
+				<li><img src="/public/img/marshall.jpg" alt="" /></li>
+				<li><img src="/public/img/lea.jpg" alt="" /></li>
+				<li><img src="/public/img/chelsea.jpg" alt="" /></li>
+				<li><img src="/public/img/david.jpg" alt="" /></li>
+				<li><img src="/public/img/dave-miller.jpg" alt="" /></li>
+				<li><img src="/public/img/jodie.jpg" alt="" /></li>
+			</ul>
+			<div class="gallery-nav">
+				<button class="gallery-prev"><span>&lt;</span></button>
+				<button class="gallery-next"><span>&gt;</span></button>
+			</div>
+		</div>
+	</div>
 </div>
 
-<?php include 'includes/footer.php' ?>
+<?php include 'includes/footer.php'; ?>

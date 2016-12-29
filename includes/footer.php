@@ -1,16 +1,17 @@
 		</main>
-		<footer id="footer" role="contentinfo">
-			<div class="col col1">
-				<a href="mailto:bhutchinsonphoto@gmail.com">bhutchinsonphoto@gmail.com</a>
+		<footer class="site-footer">
+			<div class="row">
+				<div class="col sm-4">
+					&copy; <?php echo date('Y'); ?> Ben Hutchinson
+				</div>
+				<div class="col sm-4">
+					<a href="mailto:bhutchinsonphoto@gmail.com">bhutchinsonphoto@gmail.com</a>
+				</div>
+				<div class="col sm-4">
+					<a href="tel:6089638783">608.963.8783</a>
+				</div>
 			</div>
-			<div class="col col2">
-				<a href="tel:6089638783">608.963.8783</a>
-			</div>
-			<?php /* ?><div class="col col3">
-				<a href="http://benhutchinson.tumblr.com">blog</a>
-			</div><?php */ ?>
 		</footer>
-		<script src="<?php echo $scripts ?>plugins/jquery.lazyload/jquery.lazyload.min.js"></script>
-		<script src="<?php echo $scripts ?>site.js"></script>
+		<script src="/public/js/site.js"></script>
 	</body>
 </html>

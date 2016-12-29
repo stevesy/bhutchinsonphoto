@@ -1,21 +1,30 @@
 <?php
 	$pageTitle = 'Portraits';
-	$bodyClass = 'portraits';
-	$metaDesc = '';
+	$bodyClass = 'page-gallery page-portraits';
 	
 	include 'includes/header.php';
 ?>
 
-<div class="gallery">
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>chloe-1.jpg" alt="chloe-1.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>IMG_1116.jpg" alt="IMG_1116.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>juliana.jpg" alt="juliana.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>sharlyn.jpg" alt="sharlyn.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>diltsy.jpg" alt="diltsy.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>Monica.jpg" alt="Monica.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>IMG_0245.jpg" alt="IMG_0245.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>kristin.jpg" alt="kristin.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>mary-2.jpg" alt="mary-2.jpg" />
+<div class="section section-gallery">
+	<div class="section-content row">
+		<div class="col">
+			<ul class="gallery">
+				<li><img src="/public/img/chloe-1.jpg" alt="" /></li>
+				<li><img src="/public/img/IMG_1116.jpg" alt="" /></li>
+				<li><img src="/public/img/juliana.jpg" alt="" /></li>
+				<li><img src="/public/img/sharlyn.jpg" alt="" /></li>
+				<li><img src="/public/img/diltsy.jpg" alt="" /></li>
+				<li><img src="/public/img/Monica.jpg" alt="" /></li>
+				<li><img src="/public/img/IMG_0245.jpg" alt="" /></li>
+				<li><img src="/public/img/kristin.jpg" alt="" /></li>
+				<li><img src="/public/img/mary-2.jpg" alt="" /></li>
+			</ul>
+			<div class="gallery-nav">
+				<button class="gallery-prev"><span>&lt;</span></button>
+				<button class="gallery-next"><span>&gt;</span></button>
+			</div>
+		</div>
+	</div>
 </div>
 
-<?php include 'includes/footer.php' ?>
+<?php include 'includes/footer.php'; ?>

@@ -1,0 +1,8 @@
+.site-main {
+	margin-top: 20px;
+
+	@media #{$query-lg} {
+		margin-top: 0;
+		margin-left: 330px;
+	}
+}

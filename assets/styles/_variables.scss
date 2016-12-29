@@ -1,0 +1,74 @@
+// brand colors
+
+$brand-primary: #dfae3c !default;
+$brand-secondary: #e1e000 !default;
+$brand-success: #5cb85c !default;
+$brand-warning: #f0ad4e !default;
+$brand-danger: #d9534f !default;
+
+
+// media query breakpoints
+
+$screen-sm: 480px !default;
+$screen-md: 768px !default;
+$screen-lg: 1024px !default;
+$screen-xl: 1200px !default;
+
+$screen-xs-max: ($screen-sm - 1) !default;
+$screen-sm-max: ($screen-md - 1) !default;
+$screen-md-max: ($screen-lg - 1) !default;
+$screen-lg-max: ($screen-xl - 1) !default;
+
+$query-sm: "only screen and (min-width:" + $screen-sm + ")" !default; // @media #{$query-sm} {}
+$query-md: "only screen and (min-width:" + $screen-md + ")" !default;
+$query-lg: "only screen and (min-width:" + $screen-lg + ")" !default;
+$query-xl: "only screen and (min-width:" + $screen-xl + ")" !default;
+
+$query-xs-max: "only screen and (max-width:" + $screen-xs-max + ")" !default;
+$query-sm-max: "only screen and (max-width:" + $screen-sm-max + ")" !default;
+$query-md-max: "only screen and (max-width:" + $screen-md-max + ")" !default;
+$query-lg-max: "only screen and (max-width:" + $screen-lg-max + ")" !default;
+
+$query-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)" !default;
+
+
+// grid
+
+$grid-max-width: 100% !default;
+$gutter-width: 20px !default;
+
+
+// scaffolding
+
+$body-bg: #fff !default;
+$color-base: #333 !default;
+
+$link-color: $brand-primary !default;
+$link-hover-color: darken($link-color, 15%) !default;
+
+
+// typography
+
+$font-family-serif: Georgia, 'Times New Roman', Times, serif !default;
+$font-family-monospace: Menlo, Monaco, Consolas, 'Courier New', monospace !default;
+$font-family-base: sans-serif !default;
+
+$font-size-base: 1rem !default;
+$line-height-base: 1.4 !default;
+$font-weight-base: 400 !default;
+
+$font-size-lg: 1.125rem !default;
+$font-size-sm: 0.875rem !default;
+
+$font-size-h1: 2rem !default;
+$font-size-h2: 1.5rem !default;
+$font-size-h3: 1.25rem !default;
+$font-size-h4: 1.125rem !default;
+$font-size-h5: 1rem !default;
+$font-size-h6: 0.875rem !default;
+
+$headings-font-family: 'Raleway', sans-serif !default;
+$headings-line-height: 1.2 !default;
+$headings-font-weight: inherit !default;
+$headings-color: inherit !default;
+$headings-margin: 0 0 0.25em;

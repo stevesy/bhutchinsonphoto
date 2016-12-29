@@ -1,20 +1,29 @@
 <?php
 	$pageTitle = 'Models';
-	$bodyClass = 'models';
-	$metaDesc = '';
+	$bodyClass = 'page-gallery page-models';
 	
 	include 'includes/header.php';
 ?>
 
-<div class="gallery">
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>Baylie-2.jpg" alt="Baylie-2.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>Baylie.jpg" alt="Baylie.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>Rhiannon.jpg" alt="Rhiannon.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>Rhiannon-2.jpg" alt="Rhiannon-2.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>Heidi.jpg" alt="Heidi.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>Heid-2.jpg" alt="Heid-2.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>Hailey.jpg" alt="Hailey.jpg" />
-	<img src="<?php echo $images ?>spacer.gif" data-src="<?php echo $images ?>Devi.jpg" alt="Devi.jpg" />
+<div class="section section-gallery">
+	<div class="section-content row">
+		<div class="col">
+			<ul class="gallery">
+				<li><img src="/public/img/Baylie-2.jpg" alt="" /></li>
+				<li><img src="/public/img/Baylie.jpg" alt="" /></li>
+				<li><img src="/public/img/Rhiannon.jpg" alt="" /></li>
+				<li><img src="/public/img/Rhiannon-2.jpg" alt="" /></li>
+				<li><img src="/public/img/Heidi.jpg" alt="" /></li>
+				<li><img src="/public/img/Heid-2.jpg" alt="" /></li>
+				<li><img src="/public/img/Hailey.jpg" alt="" /></li>
+				<li><img src="/public/img/Devi.jpg" alt="" /></li>
+			</ul>
+			<div class="gallery-nav">
+				<button class="gallery-prev"><span>&lt;</span></button>
+				<button class="gallery-next"><span>&gt;</span></button>
+			</div>
+		</div>
+	</div>
 </div>
 
-<?php include 'includes/footer.php' ?>
+<?php include 'includes/footer.php'; ?>
