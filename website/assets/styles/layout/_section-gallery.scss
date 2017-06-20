@@ -1,5 +1,4 @@
 .section-gallery {
-
 	@media #{$query-lg} {
 		display: flex;
 		align-items: center;
@@ -8,6 +7,14 @@
 		overflow: auto;
 		margin-left: -330px;
 		padding-left: 330px;
+	}
+
+	.section-content {
+		&:hover {
+			.gallery-nav {
+				opacity: 1;
+			}
+		}
 	}
 
 	.gallery {
@@ -24,6 +31,8 @@
 		right: 0;
 		left: 0;
 		display: none;
+		opacity: 0.25;
+		transition: opacity 300ms;
 
 		@media #{$query-lg} {
 			display: block;
@@ -34,16 +43,17 @@
 			position: absolute;
 			border: none;
 			padding: 0;
-			background-color: rgba(#fff,0.5);
+			background-color: rgba(#fff,0.75);
 			width: 50px;
 			height: 555px;
-			margin-top: -280px;
+			margin-top: -288px;
 			text-align: center;
 			cursor: pointer;
-			transition: background-color 300ms;
+			opacity: 0.75;
+			transition: opacity 300ms;
 
 			&:hover {
-				background-color: rgba(#fff,0.75);
+				opacity: 1;
 			}
 
 			&:focus {
