@@ -14,7 +14,7 @@ module.exports = function (grunt) {
 					require: ['jquery']
 				},
 				files: {
-					'public/js/site.js': 'assets/scripts/site.js'
+					'website/public/js/site.js': 'website/assets/scripts/site.js'
 				}
 			}
 		},
@@ -26,7 +26,7 @@ module.exports = function (grunt) {
 					quoteStyle: 1,
 				},
 				files: {
-					'public/js/site.js': 'public/js/site.js'
+					'website/public/js/site.js': 'website/public/js/site.js'
 				}
 			}
 		},
@@ -39,11 +39,11 @@ module.exports = function (grunt) {
 				expand: true,
 				flatten: true,
 				src: [
-					'assets/styles/*.scss',
-					'!assets/styles/*/*.scss',
-					'!assets/styles/_*.scss'
+					'website/assets/styles/*.scss',
+					'!website/assets/styles/*/*.scss',
+					'!website/assets/styles/_*.scss'
 				],
-				dest: 'public/css/',
+				dest: 'website/public/css/',
 				ext: '.css'
 			}
 		},
@@ -57,7 +57,7 @@ module.exports = function (grunt) {
 				]
 			},
 			dist: {
-				src: 'public/css/*.css'
+				src: 'website/public/css/*.css'
 			}
 		},
 
@@ -70,20 +70,20 @@ module.exports = function (grunt) {
 				},
 				files: [{
 					expand: true,
-					cwd: 'assets/images/',
+					cwd: 'website/assets/images/',
 					src: ['**/*.{png,jpg,gif}'],
-					dest: 'public/img/'
+					dest: 'website/public/img/'
 				}]
 			}
 		},
 
 		watch: {
 			css: {
-				files: 'assets/styles/**/*.scss',
+				files: 'website/assets/styles/**/*.scss',
 				tasks: ['sass', 'postcss']
 			},
 			js: {
-				files: ['Gruntfile.js', 'assets/scripts/**/*.js'],
+				files: ['Gruntfile.js', 'website/assets/scripts/**/*.js'],
 				tasks: ['browserify', 'uglify']
 			}
 		}
