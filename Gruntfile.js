@@ -87,7 +87,6 @@ module.exports = function (grunt) {
 				tasks: ['browserify', 'uglify']
 			}
 		}
-
 	});
 
 	grunt.loadNpmTasks('grunt-browserify');
