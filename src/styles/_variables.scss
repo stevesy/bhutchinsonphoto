@@ -1,0 +1,14 @@
+// Bootstrap overrides
+//
+$grid-breakpoints: (
+	xs: 0,
+	sm: 568px,
+	md: 768px,
+	lg: 1024px,
+	xl: 1200px
+);
+
+// Site variables & overrides
+//
+$brand-primary: rgb(223,174,60);
+$font-family-base: 'Raleway', sans-serif;

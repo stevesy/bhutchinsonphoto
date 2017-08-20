@@ -1,0 +1,39 @@
+.site-footer {
+	font-size: 14/16 * 1rem;
+	padding: 1rem 0;
+	background-color: #fff;
+
+	@include media-breakpoint-up(sm) {
+		font-size: 0.75rem;
+	}
+
+	@include media-breakpoint-up(lg) {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		font-size: 14/16 * 1rem;
+	}
+
+	ul {
+		@include list-unstyled();
+		margin-bottom: 0;
+		text-transform: lowercase;
+		text-align: center;
+
+		@include media-breakpoint-up(sm) {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+		}
+
+		li {
+			padding: 0.25em;
+			margin-bottom: 0;
+		}
+
+		a {
+			color: $body-color;
+		}
+	}
+}

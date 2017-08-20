@@ -1,6 +1,0 @@
-User-agent: *
-
-Disallow: /robots.txt
-Disallow: /404.php
-
-Sitemap: http://www.bhutchinsonphoto.com/sitemap.xml
